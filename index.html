@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase Auth Tutorial</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center">Firebase Auth Tutorial</h1>
+            <button id="sign-in" type="button" class="btn btn-default">Sign In</button>
+            <button id="sign-out" type="button" class="btn btn-default">Sign Out</button>
+        </div><br/>
+        <div id="auth-data" class="col-xs-12">
+
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCqu0vQlmbSOFk5U4UVmJaW1_ytFhm8mbw",
+        authDomain: "fb-chatroom.firebaseapp.com",
+        databaseURL: "https://fb-chatroom.firebaseio.com",
+        projectId: "fb-chatroom",
+        storageBucket: "fb-chatroom.appspot.com",
+        messagingSenderId: "482504856972"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="main.js"></script>
+</body>
+
+</html>
